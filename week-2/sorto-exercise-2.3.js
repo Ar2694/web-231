@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  sorto-excercise.js
+; Title:  sorto-excercise-2.3.js
 ; Author: Arlix Sorto
 ; Date:   6/3/2020
 ; Description: Exercise 2.3 - Function Properties
