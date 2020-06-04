@@ -7,6 +7,9 @@
 ;===========================================
 */
 
+/* Import sorto-header.js from the root directory*/
 const header = require('../sorto-header.js');
+
+/** Calls the display function and output with console.log*/
 console.log(header.display("Arlix", "Sorto", "Exercise 2.2 - Header"));
 
