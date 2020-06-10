@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title:  sorto-excercise-3.2.js
+; Title:  sorto-exercise-3.2.js
 ; Author: Arlix Sorto
 ; Date:   6/9/2020
 ; Modified by: Arlix Sorto
@@ -8,14 +8,38 @@
 ;===========================================
 */
 
+// Test variables
+var fruit1 = "Apple";
+var fruit2 = "Pineapple";
+var fruit3 = "Orange";
+var fruit4 = "Orange";
+var fruit5 = "Mango";
+var fruit6 = "Grape";
 
-var fruit1 = "apples";
-var fruit2 = "pineapples";
-var fruit3 = "oranges";
-var fruit4 = "oranges";
-var fruit5 = "mangos";
-var fruit6 = "grapes";
+//Function: Compares two values and return's a boolean.
+function match(value1, value2){
+    if(value1 === value2){
 
+      return true;
+    }else{
+
+      return false;
+    }
+}
+
+//Function: Return's a string if values do not match.
+function logMismatch(value1, value2){
+  if(value1 !== value2){
+    return value1 + " and " + value2 + " do not match.";
+  }
+}
+
+//Function: Return's a string if values do match.
+function logMatch(value1, value2){
+  if(value1 === value2){
+    return value1 + " and " + value2 + " do match.";
+  }
+}
 
 // Compares the first set of values.
 if(match(fruit1,fruit2)){
@@ -48,31 +72,5 @@ if(match(fruit5,fruit6)){
 
   console.log(logMismatch(fruit5,fruit6));
 
-}
-
-
-//Function: Compares two values and return's a boolean.
-function match(value1, value2){
-    if(value1 === value2){
-
-      return true;
-    }else{
-
-      return false;
-    }
-}
-
-//Function: Return's a string if values do not match.
-function logMismatch(value1, value2){
-  if(value1 !== value2){
-    return "Your values do not match.";
-  }
-}
-
-//Function: Return's a string if values do match.
-function logMatch(value1, value2){
-  if(value1 === value2){
-    return "Your values do match.";
-  }
 }
 
