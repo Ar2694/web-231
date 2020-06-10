@@ -9,6 +9,8 @@
   The enter key was pressed
 */
 
+let eventKeyCode = 13
+
 // Switch statement
 switch(eventKeyCode) {
 
