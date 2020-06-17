@@ -1,13 +1,20 @@
 /*
   Expected output:
 
-  Arlix Sorto
-  Exercise 3.3
-  6/9/2020
+  FirstName LastName
+  Assignment 3.3
+  Today's Date
 
   // Expected output
   The enter key was pressed
 */
+
+/* Import sorto-header.js from the root directory*/
+const header = require('../sorto-header.js');
+
+/** Calls the display function and output the header*/
+console.log(header.display("Arlix", "Sorto", "Assignment 3.3"));
+console.log("");
 
 let eventKeyCode = 13
 

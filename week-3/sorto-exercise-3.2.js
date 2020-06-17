@@ -1,9 +1,9 @@
 /*
   Expected output:
 
-  Arlix Sorto
+  FirstName LastName
   Exercise 3.2
-  6/9/20
+  Today's Date
 
   // output from the match() function
   false
@@ -15,6 +15,12 @@
   Four and Three do not match!
 */
 
+/* Import sorto-header.js from the root directory*/
+const header = require('../sorto-header.js');
+
+/** Calls the display function and output the header*/
+console.log(header.display("Arlix", "Sorto", "Exercise 3.2"));
+console.log("");
 
 // Test variables
 var val1 = "Truck";
@@ -48,6 +54,10 @@ function logMatch(value1, value2){
     return value1 + " and " + value2 + " do match!";
   }
 }
+
+console.log(match(val1,val2));
+console.log(match(val3,val4));
+console.log("");
 
 // Compares the first set of values.
 if(match(val1,val2)){
