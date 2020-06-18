@@ -29,6 +29,7 @@ console.log("");
 
 var vehicles = ["Car", "Truck", "Motorcycle", "Airplane", "Bus"];
 
+//Display the list of items, Compare two items, and then output selected item.
 function getValue(arr, str){
   console.log("-- DISPLAYING ARRAY ITEMS --");
 
@@ -44,6 +45,7 @@ function getValue(arr, str){
     }
   }
 }
+//Compare two items and then output the selected item.
 function getValue2(arr, str){
 
   for(var i = 0; i < arr.length; i++){
@@ -54,6 +56,8 @@ function getValue2(arr, str){
     }
   }
 }
+
+//Calling both functions.
 getValue(vehicles, "Motorcycle");
 console.log(" ");
 getValue2(vehicles, "Bus");
