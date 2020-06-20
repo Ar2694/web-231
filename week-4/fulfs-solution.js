@@ -3,7 +3,7 @@
  	; Title: Discussion 4.1
  	; Author: Perry Fulfs
  	; Date: 16 June 2020
- 	; Modified By: Perry Fulfs
+ 	; Modified By: Arlix Sorto
  	; Description: create an array
  	; that outputs random motorcycle brand name
  	;===========================================
