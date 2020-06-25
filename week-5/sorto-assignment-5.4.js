@@ -41,7 +41,7 @@
 const header = require('../sorto-header.js');
 
 /** Calls the display function and output the header*/
-console.log(header.display("Arlix", "Sorto", "Exercise 5.3"));
+console.log(header.display("Arlix", "Sorto", "Assignment 5.4"));
 console.log("");
 
 
