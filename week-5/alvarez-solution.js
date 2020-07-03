@@ -20,7 +20,7 @@ console.log ('\n');
 let emoji = new Map();
 emoji.set('🚗', 'car');
 emoji.set('🍕', 'pizza');
-emoji.set('😄 ', 'grinning face'); /** Solution: Enclosed the key and value with apostrophes since both of the values are string types.*/
+emoji.set('😄', 'grinning face'); /** Solution: Enclosed the key and value with apostrophes since both of the values are string types.*/
 emoji.size;
 
 // one error bellow
