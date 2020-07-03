@@ -1,4 +1,3 @@
-
 const header = require('../sorto-header.js');/*** My header file has a different name */
 
 console.log(header.display("Karina", "Alvarez", "Discussion Board 5.1 - Advanced Arrays"));
