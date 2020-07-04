@@ -24,7 +24,7 @@
 
  	// Add Header
 
- 	var header = require('../sorto-header.js');
+ 	var header = require('../sorto-header.js'); // My file name is different.
  	console.log(header.display("Wendy", "Leon", "Exercise 6.1 - Objects"));
  	console.log('\n');
 
