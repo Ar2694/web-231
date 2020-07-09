@@ -1,0 +1,14 @@
+thead tr{
+  background-color: #4A86B5;
+   color: #FFFFFF;
+}
+table{
+      border-collapse:collapse;
+}
+table td{
+   border: 1px solid #E3E8E4;
+padding: 4px;
+}
+tbody tr:nth-child(even){
+   background-color: #B2CAE4;
+}
