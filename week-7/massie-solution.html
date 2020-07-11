@@ -1,0 +1,55 @@
+
+<!--
+============================================
+; Title:  Discussion 7.1
+; Author: Sarah Massie
+; Date:   8 July 2020
+; Modified By: Arlix Sorto
+; Description: HTML using DOM elements with errors
+;===========================================
+-->
+
+<!Doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Discussion 7.1</title>
+    </head>
+<body>
+
+  <h1>Discussion 7.1</h1>
+    <div id="main">
+      <p>This text is replaced.</p>
+</div>
+
+  <h2 class="header">List of toy brands:</h2>
+    <div id="toys">
+</div>
+
+
+<script>
+// Solution: Replacing getElementsByName with getElementById will replace the text in <p> tag.
+  document.getElementById("main").innerHTML = "Week 7 we discuss DOM elements in HTML.";
+
+  var toys = ["Polly Pocket", "Bratz", "Tamagotchi", "Barbie", "iDog", "Furby", "Power Rangers", "Pokemon", "My Little Pony"];
+
+  function displayToys(toys) {
+    document.write("<ol>");
+  for (var i = 0; i < toys.length; i++) {
+     //Solution: Removing "toys.innerHTML =+" and added a slash (/) to the <li> closing tag should output the list correctly.
+     document.write("<li>" + toys[i] + "</li>"); }
+
+      //Solution: Added a slash (/) to the <ol> closing tag
+    document.write("</ol>");
+  }
+
+  displayToys(toys);
+  //Solution: Removing document.getElementById("toys").innerHTML = toys" removes the array list from the document.
+
+
+    </script>
+
+    </body>
+</html>
