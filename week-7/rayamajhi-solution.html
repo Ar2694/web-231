@@ -1,0 +1,53 @@
+<!--
+============================================
+; Title:  Discussion Board 7.1 - JavaScript in Web Browsers
+; Professor Cross
+; Date:   7 July 2020 (PST)
+; Author: Anil Rayamajhi
+; Modified By: {name}
+;
+; Description: A program with errors
+;===========================================
+ -->
+
+<!--
+  Expected Outputs
+  -
+  California - CA
+  Nevada - NV
+  Arizona - AZ
+  Nebraska - NE
+  Maine - ME
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Discussion Board 7.1 - JavaScript in Web Browsers</title>
+  </head>
+  <body>
+    <h2>Discussion Board 7.1</h2>
+    <h3>JavaScript in Web Browsers</h3>
+
+    <div id="states"></div>
+    <script>
+      var states = {
+        California: "CA",
+        Nevada: "NV",
+        Arizona: "AZ",
+        Nebraska: "NE",
+        Maine: "ME",
+      };
+
+      var listItems = Object.keys(states).map(
+        //Solution: Removing the double qoutes from the states value.
+        (state, abbr) => `<li>${state}  -  ${states[state]}</li>`
+      );
+      var element = "<ul>" + listItems.join("") + "</ul>";
+
+          //Solution: Replacing getElement with getElementById and changing the object innerText to innerHTML.
+      document.getElementById("states").innerHTML = element;
+    </script>
+  </body>
+</html>
