@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Exercise 8.3</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- you will need to the href to point to your root directories css file -->
+    <link rel="stylesheet" href="../site.css" />
+  </head>
+  <body>
+    <div id="container">
+      <nav></nav>
+      <h1>Lorem Ipsum</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin gravida
+        arcu eu ornare elementum. Donec at elementum quam, vel eleifend lectus.
+        Vestibulum nulla ex, tristique quis posuere a, ornare sed massa. Nam
+        molestie posuere ante, eu porta erat fermentum nec. Nullam laoreet mi
+        erat, et laoreet felis dapibus aliquam. Fusce elementum, ex in malesuada
+        elementum, nunc sem tempus quam, quis pretium magna odio id augue.
+        Quisque facilisis, lorem et lobortis suscipit, quam ex vestibulum quam,
+        vitae laoreet arcu velit et neque. Nulla non magna vulputate, efficitur
+        diam vel, iaculis elit. Pellentesque habitant morbi tristique senectus
+        et netus et malesuada fames ac turpis egestas. Cras luctus elit eu
+        fermentum egestas. Proin ullamcorper nulla nibh, vel lacinia ipsum
+        accumsan non. Aenean posuere quam sit amet commodo mollis.
+      </p>
+      <button>Toggle</button>
+      <br />
+      <br />
+      <table>
+        <thead>
+          <tr>
+            <td>ID</td>
+            <td>Type</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="#" class="fruitid">1</a></td>
+            <td>apple</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="fruitid">2</a></td>
+            <td>orange</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="fruitid">3</a></td>
+            <td>grape</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="fruitid">4</a></td>
+            <td>pear</td>
+          </tr>
+          <tr>
+            <td><a href="#" class="fruitid">5</a></td>
+            <td>banana</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script type="text/javascript">
+
+    //Hide the paragraph on click.
+      $("button").click(function () {
+        $("p").toggle();
+      });
+
+      //Output fruitId and fruitType on click
+      $(".fruitid").click(function (event) {
+        event.preventDefault();
+        var fruitId = $(this).text();
+        var fruitType = $(this).closest("td").next().text();
+
+        alert("fruitId: " + fruitId + "\nfruitType: " + fruitType);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Exercise 8.2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+      body {
+        margin: 0 auto;
+        font-family: "Roboto", sans-serif;
+      }
+      ul {
+        list-style: none;
+        margin: 0 auto;
+      }
+      nav {
+        background-color: green;
+        height: 40px;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="fruits"></div>
+
+    <script>
+      //Array of objects.
+      var fruits = [
+        { id: 1, type: "apple" },
+        { id: 2, type: "orange" },
+        { id: 3, type: "grape" },
+        { id: 4, type: "pear" },
+      ];
+
+      //Create and append an unordered list of fruits to the DOM.
+      var list_of_fruits = "<ul>";
+
+      fruits.forEach(function (value) {
+        list_of_fruits += "<li>" + value.type + "</li>";
+      });
+      list_of_fruits += "</ul>";
+
+      $("#fruits").append(list_of_fruits);
+
+
+      //Add a title at the start #fruit div.
+      $("#fruits").prepend("<h1>My fruits</h1>");
+
+      //Add a top bar.
+      $("body").prepend("<nav></nav>");
+    </script>
+  </body>
+</html>
