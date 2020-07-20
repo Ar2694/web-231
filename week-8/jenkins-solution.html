@@ -1,0 +1,90 @@
+<!--
+============================================
+; Title:  Assignment 8.1
+; Author: Douglas
+; Date:   16 July 2020
+; Modified By:
+; Description: Javascript program with jQuery that has 3 errors.
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Discussion 8.1</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+
+      body{
+        text-align: center;
+      }
+
+      button{
+        padding: 10px;
+        width: 100px;
+      }
+
+    </style>
+</head>
+<body>
+
+  <div id="paragraphs">
+  <h2>Hello World!!!</h2>
+
+<!-- Fake text to fill out the page-->
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus at quam nec feugiat.
+Mauris ornare sapien nec maximus rhoncus. Sed ligula ligula, rhoncus id venenatis sit amet,
+bibendum at mi. Vestibulum vitae velit turpis. Phasellus ac leo a diam mattis tempor eu a orci.
+Pellentesque pellentesque erat eu leo sodales, id ultricies ligula elementum. Nullam finibus quam at sodales molestie.
+Aliquam imperdiet tincidunt dolor, at aliquam ex cursus in. Nulla accumsan lacus nisi, quis facilisis nisi faucibus in.
+Nulla ac ex ut elit pulvinar ullamcorper id ut justo. Proin porta vulputate nisl in pretium.
+Mauris mauris felis, suscipit eget consequat eget, sodales euismod tortor. Quisque dignissim feugiat lorem vitae volutpat.
+ Mauris arcu leo, sagittis nec odio non, dignissim malesuada nibh. Sed sed dapibus ligula.
+ <br>
+ <br>
+Nunc vestibulum ac mi id tincidunt. Sed vehicula tempus sem, nec lobortis ante euismod vitae.
+Mauris ac quam sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+Nullam luctus pretium consequat. Nunc feugiat pharetra massa, a hendrerit quam egestas ut. Aliquam erat volutpat.
+Donec volutpat eu risus id sodales. In ultricies maximus scelerisque. Donec id mi pulvinar, tempus sapien nec, tristique nisl.
+Sed quis metus condimentum, molestie tellus a, mattis magna. Pellentesque id nisi vulputate, vulputate magna at, efficitur tortor.
+Etiam eget eleifend ipsum, a malesuada eros.
+<br>
+<br>
+Nulla tincidunt nec nulla et varius. Nunc sed tortor id ex convallis gravida sit amet sit amet libero.
+Nullam elementum, justo in congue consequat, tellus tellus rutrum ipsum, id tempus elit sem quis sapien.
+Integer efficitur, nunc at mattis condimentum, ex nunc sollicitudin lectus, in pulvinar tortor nisi a dui.
+ Ut efficitur, ex at hendrerit posuere, ligula dolor bibendum urna, nec efficitur dolor eros vitae magna.
+ Quisque faucibus efficitur turpis non maximus. Suspendisse potenti. Praesent in rhoncus ipsum, sit amet dictum nisi.
+ Pellentesque ante ligula, vehicula eu lobortis non, pharetra vitae nunc. In nec diam finibus tortor finibus euismod.
+ Maecenas vulputate est ac cursus viverra. Quisque mattis, metus et dictum accumsan, nulla urna scelerisque purus,
+sit amet eleifend velit neque ac eros. Pellentesque quis magna ipsum. Phasellus gravida ut lectus sit amet finibus. </p>
+</div>
+
+<!--The buttons that call on the Jquery-->
+<button id="hidden">Hide Me</button>
+<button id="show">Show</button>
+
+<!-- Below is the Jquery function for the buttons-->
+<script>
+  // 3 errors below
+    $(function () {
+
+      //Arlix solution: .onclick() is not a jquery function. Replacing .onclick() with .click()
+      $("#hidden").click(function(){
+
+       //Arlix solution:
+       //The "S" causes a syntax error. Replacing "S" with "$" is the correct way to select an HTML element.
+        $("#paragraphs").hide();
+      });
+      $("#show").click(function(){
+        // Arlix solution: .shown() is not a valid method.  Replacing ".shown()" with ".show()"  to show the paragraphs.
+        $("#paragraphs").show();
+      });
+    });
+
+</script>
+
+</body>
+</html>
